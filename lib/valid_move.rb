@@ -1,6 +1,8 @@
 # code your #valid_move? method here
+require "pry" 
 def valid_move?(board, index)
-  if position_taken?(board, index) && 0.between?(0,8)
+  binding.pry
+  if !position_taken?(board, index)
     return nil
 end
 end
